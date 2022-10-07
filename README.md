@@ -1,5 +1,3 @@
 # today I Learned
 
-May be do everyday. 
-  
-       
+May be do Intelli j spring. Project  
