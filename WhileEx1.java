@@ -30,5 +30,4 @@ public class WhileEx1 {
 		System.out.println("j : " + j);
 		System.out.println("1 ~ " + (j - 2) + " Â¦¼öÀÇ ÇÕ : " + sum );
 	}
-
 }

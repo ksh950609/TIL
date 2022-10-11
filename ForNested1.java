@@ -24,7 +24,7 @@ public class ForNested1 {
 
 		for (int i = 1; i <= 3; i++) {
 			for (int j = 1; j <= 5; j++) {
-				count++;  // 반복문 수행될 때마다 1씩 증가
+				count++;
 				System.out.print(count + "\t");
 			}
 			System.out.println();

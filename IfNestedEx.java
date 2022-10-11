@@ -3,7 +3,7 @@ package ch04_control_if_for.sec01;
 import java.text.DecimalFormat;
 import java.util.Scanner;
 
-public class IfNestedEx {
+public class IfElseEx2 {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);

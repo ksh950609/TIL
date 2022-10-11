@@ -18,3 +18,7 @@ public class ForNested2 {
 	}
 
 }
+
+
+
+구구단을 만들어보자

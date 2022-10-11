@@ -15,7 +15,7 @@ public class ForEx5 {
 		num = sc.nextInt();
 
 		for (int i = 1; i <= num; i++) {
-			System.out.print("학생" + i + "점수 입력 : ");
+			System.o3ut.print("학생" + i + "점수 입력 : ");
 			score = sc.nextInt();
 
 			total += score;
@@ -30,3 +30,8 @@ public class ForEx5 {
 	}
 
 }
+
+
+
+
+학생 수 입력하고 학생들의 성적의 합과 평균을 구하시오
