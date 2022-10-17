@@ -1,0 +1,191 @@
+public class practice for{
+public static void main(String[] args) {
+int num =5;
+
+for(int i = 0; i < num; i++){
+for(int j = 0; j < i; j++){
+system.out.println("*");
+}
+system.out.println("");
+}
+}
+}
+//직삼각형 별찍기
+
+public class practice for{
+public static void main(String[] args) {
+int num =5;
+
+for(int i = 0; i < num; i++){
+for(int j = num; j >=0; j--){
+if(i<j){
+system.out.println("");
+}else{
+system.out.println("*");
+}
+}
+} // 오른쪽 삼각형 
+
+
+public class Test {
+	public static void main(String[] args) {
+		
+		int num = 5;
+		
+		for(int i = 0; i < num; i++) { // 5줄 생성
+			for(int j = num; j > i; j--) {
+				System.out.print(" ");
+			}
+			for(int k = i * 2 + 1; k > 0; k--) {
+				System.out.print("*");
+			}
+			System.out.println();
+		}
+		
+	}
+} //피라미드
+
+public class Test {
+	public static void main(String[] args) {
+		
+		int num = 10;
+		
+		for(int i = num; i > 0; i--) { // 10개의 줄 생성
+			// 공백 생성 for문 
+            // num - i 의 갯수만큼 반복
+			for(int j = num - i; j > 0; j--) {
+				System.out.print(" ");
+			}
+			// 별 생성 for문
+            // i * 2 - 1은 홀수값으로 별찍기
+			for(int k = i * 2 - 1; k > 0; k--) { 
+				System.out.print("*"); 
+			}
+			System.out.println(""); // 행 줄바꿈
+		}
+		
+	}
+} // 역피라미드
+
+for(int i = 2; i <= 9; i++) {
+  for(int j = 1; j <= 9; j++) {
+  	System.out.println(i + "*" + j + "=" + i*j);
+  }
+} // 구구단
+
+for(int i = 2; i <= 9; i++) {
+  for(int j = 1; j <= 9; j++) {
+  	// 세로로 1*2 = 2   2*2 = 4  3*2 = 6  .... 출력
+    // "\t" 공백 넣기 하지않으면 깔끔하게 정렬되지 않는다는 점 유의!
+    System.out.print(j + "*" + i + "=" + i*j + "\t");
+  }
+  	// 줄바꿈
+  	System.out.println("");
+}
+
+
+package sample;
+import java.util.*;
+
+public class Sample
+{
+	public static void main(String[] args)
+	{
+		Scanner scn = new Scanner(System.in);
+
+		int i;
+		int a = scn.nextInt();
+
+		if(a>0 && a<11)
+		{
+			for( i=1; i<=a; i++)
+			{
+				System.out.println("JAVA 프로그래밍");
+			}
+		}
+
+		else
+		{
+			System.out.print("입력값이 잘못되었습니다.");
+		}
+	}
+}
+
+public class Sum {
+
+	public static void main(String[] args) {
+		// 합계를 저장해줄 변수 sum 선언
+		int sum = 0;
+		
+		/* 초기식: int i = 1 / 조건식: i가 100보다 작거나 같을 때 / 증감식: i는 1씩 증가*/
+		for (int i = 1; i <= 100; i++) {
+			// 변수 sum에 i값을 저장한다
+			sum += i;
+		}
+		System.out.println("1부터 100까지의 합 = " + sum);
+
+	}
+
+} // 1~100 합 5050
+
+public class Multiple {
+
+	public static void main(String[] args) {
+		int sum = 0;
+		System.out.println("3의 배수 ");
+		for (int i = 1; i <= 100; i++) {
+			if (i % 3 == 0) {
+				System.out.println(i);
+			}
+		}
+		for (int j = 1; j <= 100; j++) {
+			if(j%3 ==0) {
+				sum += j;
+			}
+		}
+		System.out.println("1~100까지 중 3의 배수의 합 = " + sum);
+
+	}
+
+} 100까지 3의 배수 나열하고 3의 배수의 합
+
+
+public class summation_of_arithmetic_progression {
+	public static void main(String[] args) {
+		
+		int totalSum = 0;
+		int oddSum = 0;
+		int evenSum = 0;
+		
+		for(int i = 0; i < 100; i++) {
+			totalSum = totalSum + (i + 1);
+		}
+		
+		System.out.println("1부터 100까지의 숫자의 합은 " + totalSum + " 입니다.\n");
+		
+		
+		for(int i = 0; i < 100; i++) {
+			if ((i + 1) % 2 != 0) {
+				oddSum = oddSum + (i + 1);
+			}
+		}
+		
+		System.out.println("1부터 100까지의 홀수의 합은 " + oddSum + " 입니다.\n");
+		
+		for(int i = 0; i < 100; i++) {
+			if ((i + 1) % 2 == 0) {
+				evenSum = evenSum + (i + 1);
+			}
+		}
+		
+		System.out.println("1부터 100까지의 짝수의 합은 " + evenSum + " 입니다.\n");
+	}
+}
+
+결과 : 
+
+1부터 100까지의 숫자의 합은 5050 입니다.
+
+1부터 100까지의 홀수의 합은 2500 입니다.
+
+1부터 100까지의 짝수의 합은 2550 입니다.
